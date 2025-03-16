@@ -4,50 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Fest</title>
-    <link rel="stylesheet" href="estilo.css">
-    <link rel="icon" href="ico.png" type="image/x-icon">
+    <style>
+    
+    body {
+            background-color: #000000; 
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            width: 1700px;
+            margin: 0 auto;
+            background-color: #000000;
+        }
+        header {
+            background-color: #46124e;
+            color: #ffffff;
+            padding: 1px 0;
+            text-align: center;
+            
+        }
+        table {
+            width: 50%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid white;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            color: white;
+        }
+        th {
+            background-color: #46124e;
+        }
+        .highlight {
+            background-color: #46124e;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin: 4px 0;
+        }
+        .form-container {
+            background-color: #46124e;
+            color: rgb(255, 255, 255);
+            padding: 20px;
+            margin: 20px auto;
+            width: 50%;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-container input[type="text"], .form-container input[type="email"], .form-container input[type="tel"] {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .form-container input[type="radio"], .form-container input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .form-container button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #222;
+        }
+      
+    </style>
 </head>
 <body>
     <div class="container">
 
-        <img src="MusicFest.png" alt="Imagem da Companhia de Eventos MusicFest" width="100%">
+        <img src="MusicFest1.png" alt="Imagem da Companhia de Eventos MusicFest" width="1700">
         <header style="font-family: fantasy; font-size: 30px; color: #ffffff; text-align: center;">
             <p style="display: inline; margin-right: 20px;">Tomorrow Brasil</p>
             <p style="display: inline; margin-right: 20px;">Tomorrow Brasil</p>
             <p style="display: inline; margin-right: 20px;">Tomorrow Brasil</p>
             <p style="display: inline; margin-right: 20px;">Tomorrow Brasil</p>
         </header>
-        <div class="audio">
+        <div class="highlight">
             <h1 style="font-size: 20px;">Lançamento do DJ Alok! Ouça Agora</h1>
             <p>Meduza, Alok - Piece Of Your Heart (Alok Remix) ft. Goodboys</p>
             <audio controls>
                 <source src="Iframe Meduza, Alok - Piece Of Your Heart (Alok Remix) ft. Goodboys [MTbX4KC0AaU].mp3" type="audio/mpeg">
             </audio>
         </div>
-        
+      
         <div style="display: flex; justify-content: space-between;">
 
             <iframe width="850" height="478" src="https://www.youtube.com/embed/TfZJaQQ9UYE?autoplay=1&mute=1&si=JhqoTpYGnojwbrOu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <table>
-                <caption style="caption-side: top; color: white; font-size: 20px; margin-bottom: 15px; margin-top: 10px; background-color: #46124e; border: 2px solid white; padding: 10px;">Programação</caption>
+                <caption style="caption-side: top; color: white; font-size: 20px; margin-bottom: 15px; margin-top: 10px; background-color: #46124e; padding: 10px;">Programação</caption>
                 <tr>
                     <th>Artista</th><th>Horário Início</th><th>Horário Término</th><th>Data</th>
                 </tr>
                 <tr>
-                    <td>DJ Alok</td><td>18:00</td><td>19:00</td><td>28/02/2025</td>
+                    <td>DJ Alok</td><td>18:00</td><td>19:00</td><td>21/02/2025</td>
                 </tr>
                 <tr>
-                    <td>Vintage Culture</td><td>19:30</td><td>20:30</td><td>28/02/2025</td>
+                    <td>Vintage Culture</td><td>19:30</td><td>20:30</td><td>21/02/2025</td>
                 </tr>
                 <tr>
-                    <td>Illusionize</td><td>22:30</td><td>23:30</td><td>28/02/2025</td>
+                    <td>Illusionize</td><td>22:30</td><td>23:30</td><td>21/02/2025</td>
                 </tr>
                 <tr>
-                    <td>Dubdogz</td><td>03:00</td><td>04:00</td><td>01/03/2025</td>
+                    <td>Dubdogz</td><td>03:00</td><td>04:00</td><td>22/02/2025</td>
                 </tr>
             </table>
         </div>
-        
         <div class="form-container">
             <h2>Inscreva-se no Evento</h2>
             <form>
