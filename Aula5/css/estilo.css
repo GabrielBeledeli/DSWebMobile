@@ -6,7 +6,7 @@ body{
     background-color: #565656;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 0; 
     color: #f1efef;
 }
 header{
@@ -24,11 +24,20 @@ nav ul{
 }
 nav ul li{
     padding: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-radius 0.3s ease;
 }
 nav ul li a{
     color: rgb(86, 86, 207);
     text-decoration: none;
     font-size: 18px;
+}
+nav ul li:hover {
+    background-color: rgb(86, 86, 207);
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+}
+nav ul li:hover a {
+    color: #f1efef;
 }
 .container{
     display: flex;
@@ -36,10 +45,70 @@ nav ul li a{
     margin: 20px;
 }
 .conteudo{
-    flex: 2; /* ocupa mais espaço na barra lateral */
+    flex: 1; /* ocupa mais espaço na barra lateral */
     background-color: #333;
     padding: 20px;
     margin-right: 10px;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgb(86, 86, 207);
+}
+.sidebar{
+    flex: 1;
+    background-color: #333;
+    padding: 20px;
+    margin-left: 10PX;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgb(86, 86, 207);
+    
+}
+
+footer{
+    background-color: #333;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.imagem{
+    padding: 10px;
+    flex:2;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #333;
+    margin-bottom: 20px;
+}
+.video{
+    padding: 10px;
+    flex: 2;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #333;
+}
+.secao{
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 2;
+    text-align: center;
+    justify-items: center;
+}
+/* RESPONSIVIDADE */
+@media (max-width: 1200px){
+    .container{
+        flex-direction: column;
+    }
+    .conteudo, .sidebar{
+        margin-right: 0; /* Remove a margem lateral */
+        margin-bottom: 10px;
+    }
+    .secao{
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: 2;
+        text-align: center;
+        justify-items: center;
+        gap: 5px;
+    }
+    .imagem, .video{
+        padding: 10px;
+        margin-bottom: 10px;
+    }
 }
