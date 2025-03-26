@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Responsividade</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        header{
+            background-color: #4caf50;
+            color: #fff;
+            font-size: 24px;
+            padding: 20px;
+        }
+        .container{
+            max-width: 1200px; 
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .grid{
+            margin-top: 20px;
+            display: grid;
+            gap: 20px;
+        }
+        .box{
+            flex: 1;
+            background-color: #183519;
+            padding: 20px;
+            border-radius: 5px;
+            color: #fff;
+        }
+        @media (max-width: 768px){
+            .grid{
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Layout Responsivo Com Media Queries</h1>
+    </header>
+    <div class="container">
+        <h2>Bem-vindo ao site!</h2>
+        <p>Este é um exemplo de design responsivo utilizando media queries.</p>
+        <div class="grid">
+            <div class="box">Bloco 1</div>
+            <div class="box">Bloco 2</div>
+            <div class="box">Bloco 3</div>
+        </div>
+    </div>
+</body>
+</html>
